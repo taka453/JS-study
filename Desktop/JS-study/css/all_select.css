@@ -1,0 +1,7 @@
+#selected-items .js-item {
+  padding-left: 0 !important;
+}
+
+#selected-items .js-item + .js-item::before {
+  content: '、';
+}

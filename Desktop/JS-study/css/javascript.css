@@ -1,0 +1,98 @@
+/* 共通スタイル */
+body {
+  padding-top: 4.5rem;
+}
+.nav-item + .nav-item {
+  margin-left: 1rem;
+}
+
+.nav-item .nav-link {
+  border: 1px solid transparent;
+  color: #ddd;
+}
+
+.nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.nav-item .nav-link.active {
+  border-radius: .25rem;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.nav-item .nav-link.active:hover {
+  background-color: #eee;
+  color: #007bff;
+}
+
+.mt-2rem {
+	margin-top: 2rem;
+}
+
+.h2 {
+  border-bottom: 2px solid #333;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.scroll-top {
+  background-color: rgba(0,0,0,.4);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  height: 50px;
+  width: 50px;
+
+  /* opacity: 0; */
+  /* visibility: hidden; */
+
+  transition: all .3s;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+
+  transition: all .3s;
+}
+
+.scroll-top:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+.select_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: auto;
+}
+
+.select_wrap .slc {
+  height: 200px !important;
+  width: auto !important;
+  min-width: 200px;
+}
+
+.select_wrap .arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.select_wrap .arrows .btn {
+  width: 50px;
+}

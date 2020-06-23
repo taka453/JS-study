@@ -1,0 +1,34 @@
+#drop-items {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.drop-item {
+  border: 1px solid #aaa;
+  border-radius: .5rem;
+  background-color: #fff;
+  display: inline-block;
+  overflow-y: auto;
+  min-height: 50vh;
+  max-height: 400px;
+  width: 200px;
+}
+
+.drop-item.drag-enter {
+  background-color: #ffd;
+}
+
+.drop-item + .drop-item {
+  margin-left: 1rem;
+}
+
+.drag-item {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: .5rem;
+  cursor: grab;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
